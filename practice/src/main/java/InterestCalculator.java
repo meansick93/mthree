@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class InterestCalculator {
     public static void main(String[] args) {
+        String period = "";
         float endValue = 0;
         float currValue=0;
         int years=0;
@@ -24,6 +25,8 @@ public class InterestCalculator {
         years = sc.nextInt(); sc.nextLine();
         System.out.println("What is the annual interest rate?");
         interestRate = sc.nextFloat(); sc.nextLine();
+        System.out.println("What Interest Compound Periods?");
+        period = sc.nextLine();
         
         /*********Printinggg*******/
         System.out.println("Calculating...");
