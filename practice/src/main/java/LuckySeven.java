@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author minsikkim
  */
 public class LuckySeven {
-    final int DICE = 6;
+    final static int DICE = 6;
     public static void main(String[] args){
         LuckySeven ls = new LuckySeven();
         ls.start();
@@ -42,7 +42,7 @@ public class LuckySeven {
         System.out.println("You are broke after "+numRolls+" rolls.");
         System.out.println("You should have quit after "+maxRolls+" when you had $"+maxValue+".");
     }
-    public boolean rollTheDice(){
+    public static boolean rollTheDice(){
         Random random = new Random();
         int dice1 = random.nextInt(DICE)+1;
         int dice2 = random.nextInt(DICE)+1;
